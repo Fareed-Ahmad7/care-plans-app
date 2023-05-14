@@ -1,6 +1,6 @@
-import 'package:care_plans/widgets/basicCare.dart';
-import 'package:care_plans/widgets/holisticCare.dart';
-import 'package:care_plans/widgets/primeCare.dart';
+import 'package:care_plans/widgets/basic_care.dart';
+import 'package:care_plans/widgets/holistic_care.dart';
+import 'package:care_plans/widgets/prime_care.dart';
 import 'package:flutter/material.dart';
 
 class CarePlans extends StatefulWidget {
