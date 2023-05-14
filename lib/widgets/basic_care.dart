@@ -1,3 +1,4 @@
+import 'package:care_plans/pages/payment_page.dart';
 import 'package:flutter/material.dart';
 
 class BasicCareWidget extends StatefulWidget {
@@ -33,7 +34,6 @@ class _BasicCareWidgetState extends State<BasicCareWidget> {
           shrinkWrap: true,
           itemCount: basicCareServices.length,
           itemBuilder: (context, index) => ListTile(
-            // tileColor: Colors.amber,
             textColor: Colors.white,
             leading:
                 const Icon(Icons.check_circle_rounded, color: Colors.white),
@@ -75,8 +75,6 @@ class _BasicCareWidgetState extends State<BasicCareWidget> {
                       horizontal: 16.0, vertical: 8.0),
                   child: Container(
                     decoration: BoxDecoration(
-                      // border: Border.all(color: Colors.grey),
-                      // border:,
                       border: index == selectedIndex
                           ? Border.all(color: Colors.grey, width: 1.5)
                           : Border.all(color: Colors.grey.withOpacity(0.5)),
@@ -122,15 +120,8 @@ class _BasicCareWidgetState extends State<BasicCareWidget> {
                         ),
                         onTap: () {
                           setState(() {
-                            // print(index);
                             selectedIndex = index;
                           });
-                          // Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //         builder: (context) => ShopDetails(
-                          //               shop_details: shop,
-                          //             )));
                         }),
                   ),
                 ),
@@ -142,14 +133,18 @@ class _BasicCareWidgetState extends State<BasicCareWidget> {
           padding: const EdgeInsets.all(16),
           width: double.infinity,
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const PaymentPage()));
+            },
             style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromRGBO(26, 117, 159, 0.5),
                 elevation: 20,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(6),
                 )
-                // backgroundColor: Colors.grey,
                 ),
             child: const Text(
               'Make Payment',
