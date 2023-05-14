@@ -14,7 +14,6 @@ class Faq extends StatelessWidget {
       'What are the pros and cons of the Prime Plan?',
       'What is the Holistic Plan and who should choose it?',
       'What are the pros and cons of the Holistic Plan?'
-
     ];
     List answers = [
       "You should consider the age of your baby, if the baby was pre-term, the type of delivery, and whether you're a working mom or homemaker.",
@@ -80,6 +79,7 @@ class Faq extends StatelessWidget {
             ),
           ],
         ),
+        const SizedBox(height: 64)
       ],
     );
   }

@@ -1,6 +1,7 @@
 import 'package:care_plans/widgets/carePlans.dart';
 import 'package:care_plans/widgets/faq.dart';
 import 'package:care_plans/widgets/heading.dart';
+import 'package:care_plans/widgets/testimonials.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: const Color.fromRGBO(0, 21, 35, 1),
         body: SingleChildScrollView(
@@ -20,6 +22,7 @@ class MyApp extends StatelessWidget {
             children: const [
                Heading(),
                CarePlans(),
+               Testimonials(),
                Faq()
             ],
           ),
