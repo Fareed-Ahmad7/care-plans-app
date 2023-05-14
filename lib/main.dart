@@ -1,4 +1,5 @@
 import 'package:care_plans/widgets/carePlans.dart';
+import 'package:care_plans/widgets/faq.dart';
 import 'package:care_plans/widgets/heading.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: const [
                Heading(),
-               CarePlans()
+               CarePlans(),
+               Faq()
             ],
           ),
         ),
