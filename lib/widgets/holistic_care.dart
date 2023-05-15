@@ -1,3 +1,4 @@
+import 'package:care_plans/pages/payment_page.dart';
 import 'package:flutter/material.dart';
 
 class HolisticCareWidget extends StatefulWidget {
@@ -67,7 +68,7 @@ class _HolisticCareWidgetState extends State<HolisticCareWidget> {
             Expanded(
               child: ListView.builder(
                 physics: const NeverScrollableScrollPhysics(),
-                padding: const EdgeInsets.fromLTRB(6,6,6,0),
+                padding: const EdgeInsets.fromLTRB(6, 6, 6, 0),
                 shrinkWrap: true,
                 scrollDirection: Axis.vertical,
                 itemCount: planDuration.length,
@@ -134,7 +135,10 @@ class _HolisticCareWidgetState extends State<HolisticCareWidget> {
           padding: const EdgeInsets.all(16),
           width: double.infinity,
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const PaymentPage()));
+            },
             style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromRGBO(26, 117, 159, 0.5),
                 elevation: 20,

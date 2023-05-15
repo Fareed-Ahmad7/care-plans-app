@@ -5,7 +5,6 @@ class PaymentPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       backgroundColor: const Color.fromRGBO(0, 21, 35, 1),
       body: Center(
@@ -31,7 +30,19 @@ class PaymentPage extends StatelessWidget {
               height: 16,
             ),
             Text(
-              'Payment Successful !',
+              'Payment Successful',
+              style: TextStyle(
+                color: Colors.lightGreen,
+                fontFamily: 'Nunito',
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Text(
+              'Thank you !',
               style: TextStyle(
                 color: Colors.lightGreen,
                 fontFamily: 'Nunito',

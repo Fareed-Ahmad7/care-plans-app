@@ -19,12 +19,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: const Color.fromRGBO(0, 21, 35, 1),
         body: SingleChildScrollView(
           child: Column(
-            children: const [
-               Heading(),
-               CarePlans(),
-               Testimonials(),
-               Faq()
-            ],
+            children: const [Heading(), CarePlans(), Testimonials(), Faq()],
           ),
         ),
       ),

@@ -1,3 +1,4 @@
+import 'package:care_plans/pages/payment_page.dart';
 import 'package:flutter/material.dart';
 
 class PrimeCareWidget extends StatefulWidget {
@@ -133,7 +134,10 @@ class _PrimeCareWidgetState extends State<PrimeCareWidget> {
           padding: const EdgeInsets.all(16),
           width: double.infinity,
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+                            Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const PaymentPage()));
+            },
             style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromRGBO(26, 117, 159, 0.5),
                 elevation: 20,
