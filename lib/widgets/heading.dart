@@ -11,7 +11,7 @@ class Heading extends StatelessWidget {
       // crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Padding(
-          padding: const EdgeInsets.fromLTRB(16, 64, 0, 16),
+          padding: const EdgeInsets.fromLTRB(16, 16, 0, 16),
           // padding: EdgeInsets.all(64),
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.start,

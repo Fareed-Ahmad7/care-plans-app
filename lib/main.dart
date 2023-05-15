@@ -15,11 +15,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: const Color.fromRGBO(0, 21, 35, 1),
-        body: SingleChildScrollView(
-          child: Column(
-            children: const [Heading(), CarePlans(), Testimonials(), Faq()],
+      home: SafeArea(
+        child: Scaffold(
+          backgroundColor: const Color.fromRGBO(0, 21, 35, 1),
+          body: SingleChildScrollView(
+            child: Column(
+              children: const [Heading(), CarePlans(), Testimonials(), Faq()],
+            ),
           ),
         ),
       ),
